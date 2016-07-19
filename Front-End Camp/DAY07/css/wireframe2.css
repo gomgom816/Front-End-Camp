@@ -1,0 +1,44 @@
+@charset "utf-8"
+
+body {
+	margin: 0;
+}
+
+.header	{
+	/*디자인 화면 폭 설정*/
+	width: 680px;
+	/*화면 가운데 배치*/
+	margin-left: auto;
+	margin-right: auto;
+	/*화면 높이에 맞게 높이 값 설정*/
+	height: 100vh;
+}
+.logo {
+	padding-top: 32px;
+}
+.logo-symbol{
+	float: left;
+	margin-left: 10px;
+	width: 163px;
+	height: 54px;
+	background: #ffd800;
+}
+.logo-text{
+	float: left;
+	width: 100px;
+	height: 54px;
+	background: #3e5e7e;
+}
+.categories {
+	float: right;
+	margin-right: 5px;
+}
+
+.category {
+	float: left;
+	width: 55px;
+	height: 55px;
+	margin-left: 10px;
+	background: #ffd800;
+	border-radius: 50%;
+}

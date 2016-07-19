@@ -1,0 +1,85 @@
+
+/*
+* 본문 디자인 (설계)
+* 글자 모양(font-fmily): Spoqa Han Sans (Like Noto Sans);
+* 글자 색상(color): #373737;
+* 글자 크기(font size): 16px;
+* 행간 비율(line height): 1.5 (16 * 1.5 = 24px);
+* 자간 설정(letter spacing): -25 (-0.025em);
+*/
+
+/*본문 디자인*/
+body {
+	/*외부 여백 설장*/
+	margin: 96px 100px 100px 100px;
+	/*배경 이미지 설정*/
+	background: url("../images/Leading-24px.png") repeat;
+	/*CSS 상속*/
+	/*글자 색상*/
+	color: #654654;
+	/*글자 크기*/
+	/*font-size: 16px;*/
+	/*글자 두께*/
+	/*100 ~ 900, lighter: 200, nomal: 400, bold: 700*/
+	font-weight: 100;
+	/*행간 설정*/
+	line-height: 1.5;
+	font
+}
+
+/*단락(Paragraph) 디자인*/
+p{
+	font-family: 'Spoqa Han Sans';
+	color: #373737;
+	font-size: 16px;
+	line-height: 1.5;
+	/*letter-spacing: -0.025em;*/
+	margin-bottom: 1.5em;
+	text-align: justify;
+}
+/*제목 디자인, 타입 배율 x1.25*/
+/*행간 계산 공식
+	*	STEP 1. 행의 개수를 구하라
+	*	글자 크기 비율(1.25) / 기본행간 비율(1.5)
+	*	결과값은 무조건 '올림''
+	*
+	*	STEP 2.
+	*	기본행간 비율(1.5) / 글자 크기 비율(1.25)
+	*	위에 나온 값에 행의 개수를 곲하라.
+	*/
+
+h6 {
+	font-size: 1.25em;
+	line-height: 1.2;
+	margin-bottom: 1.2em;
+}
+
+h5 {
+	font-size: 1.5625em;
+	line-height: 1.92;
+	margin-bottom: 0.96em;
+}
+
+h4 {
+	font-size: 1.9531em;
+	line-height: 1.54;
+	margin-bottom: 0.7680em;
+}
+
+h3 {
+	font-size: 2.4414em;
+	line-height: 1.23;
+	margin-bottom: 0.6144em;
+}
+
+h2 {
+	font-size: 3.0517em;
+	line-height: 1.48;
+	margin-bottom: 0.4915em;
+}
+
+h1 {
+	font-size: 3.8146em;
+	line-height: 1.18;
+	margin-bottom: 0.3932em;
+}

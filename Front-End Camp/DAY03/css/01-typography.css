@@ -1,0 +1,65 @@
+/*Baseline(Leading 24px) 가이드 추가*/
+body {
+	/*스타일 선언문*/
+	/*속성: 값;*/
+	/*배경 이미지(background-image) 추가*/
+	background-image: url("../images/Leading-24px.png");
+}
+/*
+* 본문 디자인 (설계)
+* 글자 모양(font-fmily): Spoqa Han Sans (Like Noto Sans);
+* 글자 색상(color): #373737;
+* 글자 크기(font size): 16px;
+* 행간 비율(line height): 1.5 (16 * 1.5 = 24px);
+* 자간 설정(letter spacing): -25;
+*/
+
+p {
+	font-family: 'Spaqa Han Sans';
+	color: #373737;
+	line-height: 1.5;
+	font-size: 16px;
+	letter-spacing: -0.025em; /*Equal M*/
+	margin-bottom: 1.5em;
+}
+
+/* 
+	제목 디자인
+	h1~6
+
+	Typo Scale: x1.24
+	Base Font Size; 16px = 1em
+ */
+
+h1, h2, h3, h4, h5, h6,
+p, ul, ol, dl, dd, figure,
+blockquote, details, hr,
+fieldset, pre, table {
+  margin: 0 0 1.5rem;
+}
+
+ h6 {
+ 	line-height: 1.209677419em; 
+ 	font-size: 1.24em; 
+
+ }
+ h5 {
+ 	line-height:  1.951092612em;
+ 	font-size: 1.5376em; 
+ }
+ h4 {
+ 	line-height: 1.573461784em;
+ 	font-size: 1.906624em; 
+ }
+ h3 {
+ 	line-height: 1.268920793em; 
+ 	font-size: 2.36421376em; 
+ }
+ h2 {
+ 	line-height: 1.023323221em; 
+ 	font-size: 2.931625062em; 
+ }
+ h1 {
+ 	line-height: 1.237890993em;
+ 	font-size: 3.635215077em;
+ }

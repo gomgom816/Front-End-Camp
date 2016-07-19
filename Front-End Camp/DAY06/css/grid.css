@@ -1,0 +1,7 @@
+.container {
+	background: url("../images/pattern-grid-10-60-10.png");
+	width: 940px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 10px;
+}

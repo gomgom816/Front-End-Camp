@@ -1,0 +1,21 @@
+.container	{
+	/*디자인 화면 폭 설정*/
+	width: 1200px;
+	/*화면 가운데 배치*/
+	margin-left: auto;
+	margin-right: auto;
+	/*화면 높이에 맞게 높이 값 설정*/
+	height: 100vh;
+}
+.logo {
+	padding-top: 54px;
+}
+.logo-symbol	{
+	margin-left: 10px;
+	width: 163px;
+	height: 54px;
+}
+.menu{
+	float: left;
+	list-style-type: none;
+}

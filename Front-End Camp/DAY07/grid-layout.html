@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>CSS Box Model / Layout</title>
+
+	<style type="text/css">
+	body {
+		margin: 3rem;
+	}
+
+	.box {
+		width: 100px;
+		height: 100px;
+		/*
+		테두리 모든 방향 (상/우/하/좌)
+		두께: 1px;
+		모양: 직선(solid) | 파선(dashed);
+		색상: #9db3dc;
+		*/
+		/*border: 10px dashed #9bd3bd;*/
+		/*padding: 10px;*/
+		/*background: #667e87;*/
+		/*배경 색상이 설정되는 위치 변경*/
+		/*background-clip: content-box;*/
+	}
+	.first {
+		background: #007FFB;
+		padding: 10px;
+		border: 10px solid #333;
+		background-clip: content-box;
+		border-radius: 50%;
+		/*margin: 10px;*/
+		margin-bottom: 10px;
+	}
+	.second {
+		background: #4ba7ca;
+		padding: 10px;
+		border: 10px solid;
+		margin-top: 10px;
+	}
+	.third {
+		background: #96b3be;
+	}
+	.fourth {
+		background: #ecff2e;
+	}
+	.fifth {
+		background: #132832;
+	}
+	.block {
+		display: block;
+	}
+	</style>
+</head>
+<body>
+	<div class="box first"></div>
+	<div class="box second"></div>
+	<div class="box third"></div>
+	<div class="box fourth"></div>
+	<div class="box fifth"></div>
+
+	<hr>
+
+	<span class="box">inline element 1</span>
+	<span class="box">inline element 2</span>
+
+	Lorem ipsum <strong class="block">dolor</strong> sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+</body>
+</html>

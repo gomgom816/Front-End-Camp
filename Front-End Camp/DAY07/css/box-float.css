@@ -1,0 +1,31 @@
+.box {
+	width: 200px;
+	height: 200px;
+	float: left;
+	margin-top: 1rem;
+	/*padding: 10px;*/
+	/*margin: 1rem 0 0 1rem;*/
+}
+
+.first {
+	margin-left: 10px;
+	/*float: left;*/
+	/*float: right;*/
+	background: #FFD800;
+
+}
+.second {
+	/*float: left;*/
+	/*float: right;*/
+	background: #FFD899;
+}
+.third {
+	/*float: left;*/
+	background: #FFD8DD;
+}
+.float-left {
+	float: left;
+}
+.clear {
+	clear: both;
+}

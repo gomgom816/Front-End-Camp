@@ -1,0 +1,92 @@
+@import url(https://fonts.googleapis.com/css?family=Poiret+One);
+
+p {
+	font-size: 14px;
+}
+
+.t1 {
+	font-family: 'Poiret One', cursive;
+	font-size: 20px;
+	color: #969595;
+}
+.t2 {
+	vertical-align: top;
+}
+.t3 {
+	font-size: 14px;
+	color: #C0C1C2;
+	margin-right: 20px;
+}
+
+span {
+	margin-left: 20px;
+	font-family: sans-serif;
+	font-size: 14px;
+	color: #C0C1C2;
+}
+
+hr {
+	text-align: left;
+	margin: 0;
+	width: 800px;
+	/*padding: top, right, bottom, left;*/
+}
+
+html {
+	background: #FBFBFB;
+}
+.p1 {
+	max-width: 680px;
+}
+
+input {
+	width: 20%;
+	padding: 12px 20px;
+    margin: 8px 0;
+	border-radius: 4px;
+	border-style:solid;
+}
+#nomal {
+	border-color: #586077;
+}
+#active {
+	border-color: #52BAE2;
+}
+#completed {
+	border-color: #E0E6F1;
+}
+#success {
+	border-color: #00C73C;
+}
+#error {
+	border-color: #FF5448;
+}
+#disable {
+	border-color: #DEE3F0;
+	background-color: #F7F7F8;
+}
+.submit {
+	background-color: #63A2FC;
+	color: white;
+	border: none;
+	width: 140px;
+	height: 48;
+	border-radius: 4px;
+	padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+.submit:hover {
+    background-color: #83B3F8;
+    color: white;
+}
+.submit:enabled:active {
+/* active css */
+	background-color: #5B8DD5;
+	color: white;
+}
+label {
+	border-radius: 2px;
+}

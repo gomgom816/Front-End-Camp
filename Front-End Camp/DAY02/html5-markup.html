@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DAY01 복습 : HTPL5 마크업(구조화)</title>
+</head>
+<body>
+	<!-- Typography for Web -->
+	<!-- 본문(단락, Paragraph, <p>) 디자인 -> 제목(Headings, <h1> ~ <h6>) 디자인 -->
+
+	<!-- 제목(Headings, <h1> ~ <h6>) 디자인 -->
+
+	<h1>HTML 제목 1</h1>
+	<h2>HTML 제목 2</h2>
+	<h3>HTML 제목 3</h3>
+	<h4>HTML 제목 4</h4>
+	<h5>HTML 제목 5</h5>
+	<h6>HTML 제목 6</h6>
+	
+	<!-- 본문(단락, Paragraph, <p>) 디자인 -->
+	<!-- 로렘입숨 (Lorem Ipsum, 더미 테스트) -->
+	
+	<!-- 앵커(닻), Anchor + href (하이퍼링크 레퍼런스: 참조(연결)주소) -->
+	<!-- 기본 : 페이지 전환 | target="_blank" : 새 탭에서 열기 -->
+	<p>야무 한글 로엠입숨 로렙입숨이란? <a href="http://www.google.com">Google</a> 디자인을 위한 더미텍스트!<a href="http://www.w3.org" target="_blank">W3C</a></p>
+
+	<!-- 
+	목록디자인
+	HTML 목록은 3가지
+	순차(Ordered List), 비순차(Unordered List), 정의 목록
+	(항목(List Item, <li>) 소유) 
+	-->	
+
+	<!-- 순서가 중요한 목록 (Depth [1], [2], [3]) -->
+	<ol>
+		<li>머리 커트하기</li>
+		<li>머리 감겨주기</li>
+		<li>머리 말리기</li>
+	</ol>
+
+	<!-- 순서가 중요하지 않은 목록 -->
+	<ul>
+		<a href="http://www.home.com" target="_blank">
+			<li>Home</li></a>
+		<a href="http://www.naver.com">
+			<li>About</li></a>
+		<a href="http://www.daum.net">
+			<li>Products</li></a>
+		<a href="http://www.kakao.com">
+			<li>Works(Portfolio)</li></a>
+		<a href="http://www.google.com" target="_blank">
+			<li>Contact</li></a>
+	</ul>
+
+	<!-- Depth 2인 목록 -->
+
+	<ul>
+	<!-- 깊이 1 -->
+		<li>기업소개
+			<ul>
+			<!-- 깊이 2 -->
+				<li>개요
+					<ul>
+					<!-- 깊이 3 -->
+						<li>한화소개</li>
+						<li>CEO인사말</li>
+						<li>한화비전</li>
+					</ul>
+				</li>
+				<li>기업 역사</li>
+				<li>기업 스토리</li>
+			</ul>
+		</li>
+		<li>사업분야</li>
+		<li>미디어센터</li>
+		<li>투자정보</li>
+		<li>인재채용</li>
+	</ul>
+
+	<ul>
+		<li><a href="">Tap1</a></li>
+		<li><a href="">Tap2</a></li>
+		<li><a href="">Tap3</a></li>
+	</ul>
+
+
+</body>
+</html>
