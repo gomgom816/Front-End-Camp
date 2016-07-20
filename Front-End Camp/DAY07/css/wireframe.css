@@ -9,30 +9,105 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	/*화면 높이에 맞게 높이 값 설정*/
-	height: 50vh;
+	height: 15vh;
+	/*height: 216px;*/
+	clear: both;
 }
 
 .logo {
-
+	margin-top: 24px;
+	margin-bottom: 24px;
+	/*margin: 0 auto;*/
 }
 
 .logo-title {
+	margin-left: auto;
+	margin-right: auto;
 	width: 96px;
 	height: 96px;
-	background: #f4f4f4;
-	margin-top: 24px;
-	margin-bottom: 24px;
-	border-radius: 50%
+	background: #4A90E2;
+	border-radius: 50%;
+	/*display: block;*/
 }
 
 .categories {
-
+	margin-top: 22px;
+	margin-bottom: 48px;
 }
 
 .category {
-	width: 140px;
+	width: 150px;
 	height: 48px;
-	background: #F4F4F4;
+	background: #4A90E2;
 	float: left;
-	margin: 22px 15px 48px 15px;
+	margin-left: 10px;
+	margin-right: 10px;
 }
+
+.main-one {
+	width: 1020px;
+	margin-top: 48px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.col-4-photo {
+	width: 1000px;
+	height: 312px;
+	background: #4A90E2;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.col-1-photo-one {
+	width: 235px;
+	height: 235px;
+	background: #4a90e2;
+	margin: 24px 10px 24px 10px;
+	float: left;
+}
+hr {
+	width: 1000px;
+}
+.photo-line {
+	margin-top: 48px;
+	margin-bottom: 48px;
+}
+.main-two{
+	width: 1020px;
+	margin-left: auto;
+	margin-right: auto;
+	clear: both;
+	height: 40vh;
+}
+.col-2-line-2-photo {
+	width: 490px;
+	height: 490px;
+	background: #4a90e2;
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.col-2-photo {
+	width: 490px;
+	height: 235px;
+	background: #4a90e2;
+	float: right;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.col-1-photo-two {
+	width: 235px;
+	height: 235px;
+	background: #4a90e2;
+	float: right;
+	margin: 20px 10px 0 10px;
+}
+.footer {
+	margin-top: 113px;
+	width: 1000px;
+	height: 64px;
+	background: #4a90e2;
+	margin-left: auto;
+	margin-right: auto;
+}
+
