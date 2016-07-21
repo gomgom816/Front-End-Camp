@@ -27,7 +27,7 @@ body {
 	margin-right: auto;
 	width: 96px;
 	height: 96px;
-	background: #4A90E2;
+	/*background: #4A90E2;*/
 	border-radius: 50%;
 	/*display: block;*/
 }
@@ -40,7 +40,7 @@ body {
 .category {
 	width: 150px;
 	height: 48px;
-	background: #4A90E2;
+	/*background: #4A90E2;*/
 	float: left;
 	margin-left: 10px;
 	margin-right: 10px;
@@ -57,14 +57,14 @@ body {
 .col-4-photo {
 	width: 1000px;
 	height: 312px;
-	background: #4A90E2;
+	/*background: #4A90E2;*/
 	margin-left: 10px;
 	margin-right: 10px;
 }
 .col-1-photo-one {
 	width: 235px;
 	height: 235px;
-	background: #4a90e2;
+	/*background: #4a90e2;*/
 	margin: 24px 10px 24px 10px;
 	float: left;
 }
@@ -86,7 +86,7 @@ hr {
 .col-2-line-2-photo {
 	width: 490px;
 	height: 490px;
-	background: #4a90e2;
+	/*background: #4a90e2;*/
 	float: left;
 	margin-left: 10px;
 	margin-right: 10px;
@@ -94,7 +94,7 @@ hr {
 .col-2-photo {
 	width: 490px;
 	height: 235px;
-	background: #4a90e2;
+	/*background: #4a90e2;*/
 	float: right;
 	margin-left: 10px;
 	margin-right: 10px;
@@ -102,7 +102,7 @@ hr {
 .col-1-photo-two {
 	width: 235px;
 	height: 235px;
-	background: #4a90e2;
+	/*background: #4a90e2;*/
 	float: right;
 	margin: 20px 10px 0 10px;
 }
@@ -110,7 +110,7 @@ hr {
 	margin-top: 113px;
 	width: 1000px;
 	height: 64px;
-	background: #4a90e2;
+	/*background: #4a90e2;*/
 	/*margin-left: auto;
 	margin-right: auto;*/
 	margin: 113px 10px 0 10px;
@@ -118,4 +118,9 @@ hr {
 
 .fa {
 	/*background: #fff;*/
+	width:
+}
+
+.bg {
+	background: #4a90e2;
 }
