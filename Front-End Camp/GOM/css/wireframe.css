@@ -1,0 +1,100 @@
+.wrapper {
+	/*background-image: url(../images/grid-system-pattern-10-80-10.png);*/
+	background-repeat: repeat;
+	width: 1200px;
+	height: 200vh;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.header-page {
+	height: 144px;
+	margin: 0 10px;
+	padding: 24px 0;
+	border-bottom: solid 1px;
+}
+
+.logo {
+	width: 96px;
+	height: 96px;
+	background: rgba(74, 144, 226, 0.5);
+	border-radius: 50%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.navigation {
+	height: 48px;
+	margin-top: 24px;
+}
+
+.categories {
+	height: inherit;
+	list-style: none;
+}
+
+.category {
+	width: 180px;
+	height: inherit;
+	background: rgba(48, 48, 48, 0.5);
+	float: left;
+	margin: 0 10px;
+}
+
+.photo-one {
+	height: 648px;
+	margin-top: 24px;
+	/*padding-bottom: 24px;*/
+	border-bottom: solid 1px;
+}
+.group-one {
+	list-style: none;
+	height: inherit;
+}
+.col-4-photo {
+	height: 312px;
+	margin: 0 10px;
+	background: rgba(96, 199, 223, 0.5);
+}
+.col-1-photo {
+	height: 288px;
+	width: 280px;
+	background: rgba(96, 199, 223, 0.5);
+	float: left;
+	margin: 24px 10px 0;
+}
+.photo-two {
+	height: 576px;
+	margin-top: 24px;
+}
+.group-two {
+	list-style: none;
+	height: inherit;
+	/*clear: both;*/
+}
+.col-2-low-2-photo {
+	height: 576px;
+	width: 580px;
+	background: rgba(48, 120, 192, 0.5);
+	float: left;
+	margin: 0 10px;
+}
+.col-2-photo {
+	width: 580px;
+	height: 264px;
+	background: rgba(48, 120, 192, 0.5);
+	float: right;
+	margin: 0 10px;
+}
+.col-1-photo-two {
+	height: 288px;
+	width: 280px;
+	background: rgba(48, 120, 192, 0.5);
+	float: right;
+	margin: 24px 10px 0;
+}
+.footer-page {
+	margin: 48px 10px 0;
+	height: 96px;
+	background: rgba(48, 48, 48, 0.5);
+}
