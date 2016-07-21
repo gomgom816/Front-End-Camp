@@ -1,10 +1,11 @@
-body {
+.wrapper {
 	width: 1020px;
+	height: 200vh;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-.header	{
+.header {
 	/*디자인 화면 폭 설정*/
 	width: 1020px;
 	/*화면 가운데 배치*/
@@ -20,6 +21,8 @@ body {
 	margin-top: 24px;
 	margin-bottom: 24px;
 	/*margin: 0 auto;*/
+	padding-bottom: 24px;
+	border-bottom: solid 1px;
 }
 
 .logo-title {
@@ -52,6 +55,9 @@ body {
 	margin-top: 48px;
 	margin-left: auto;
 	margin-right: auto;
+
+	border-bottom: solid 1px;
+	padding-bottom: 24px;
 }
 
 .col-4-photo {
@@ -68,13 +74,7 @@ body {
 	margin: 24px 10px 24px 10px;
 	float: left;
 }
-hr {
-	width: 1000px;
-}
-.photo-line {
-	margin-top: 48px;
-	margin-bottom: 48px;
-}
+
 .main-two{
 	width: 1020px;
 	margin-top: 48px;
@@ -116,10 +116,6 @@ hr {
 	margin: 113px 10px 0 10px;
 }
 
-.fa {
-	/*background: #fff;*/
-	width:
-}
 
 .bg {
 	background: #4a90e2;
