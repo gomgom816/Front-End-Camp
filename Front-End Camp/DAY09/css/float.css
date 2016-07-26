@@ -1,0 +1,48 @@
+body {
+	margin: 4rem;
+}
+
+.parent {
+	/*overflow: hidden;*/
+	background: #e0e0e0;
+	/*border: 10px solid #bababa;*/
+	/*padding: 1rem;*/
+}
+
+/*.parent::before {
+	content: "::before content";
+}*/
+
+.parent::after {
+	content: "::after content";
+	visibility: hidden;
+	height: 0;
+	display: block;
+	clear: both;
+}
+
+/*.child-1 ~ .child-4 공통 스타일 모듈*/
+[class*="child-"] {
+	float: left;
+	width: 200px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	font-size: 1.2rem;
+	color: #fff;
+}
+
+.child-1 { background: #e5742f;}
+.child-2 { background: #3907df;}
+.child-3 { background: #19b7d7;}
+.child-4 { background: #6cde0b;}
+
+.clear {
+	clear: both;
+}
+
+.other-container {
+  padding: 1rem;
+  /*height: 50px;*/
+  background: #bebdac;
+}

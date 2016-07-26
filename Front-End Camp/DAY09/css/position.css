@@ -1,0 +1,113 @@
+body {
+	margin: 4rem;
+}
+.container {
+	width: 500px;
+	height: 500px;
+	position: relative;
+	background: #000000;
+	/*transition: width 0.2s ease-out;*/
+	transition: width 0.8s cubic-bezier(0.57, -0.14, 0.41, 0.98);
+}
+
+.container:hover {
+	width: 1200px;
+}
+.box {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+
+}
+
+.red {
+	/*background: red;*/
+	background: #fd5c64;
+	background-image: url("https://randomuser.me/api/portraits/lego/2.jpg");
+	background-size: 100px;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	/*top: 10px;*/
+	/*left: 20px;*/
+	/*background: */
+}
+
+.blue {
+	/*background: blue;*/
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	/*right: -100px;*/
+	/*top: 30px;*/
+	background: #4958fd;
+	background-image: url("https://randomuser.me/api/portraits/lego/5.jpg");
+	background-size: 100px;
+}
+.blue::before {
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	content: "";
+	display: block;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	background: #4958fd;
+}
+.blue:after {
+	position: absolute;
+	top: -20px;
+	right: -20px;
+	content: "";
+	display: block;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	background: #4958fd;
+}
+
+.yellow {
+	/*background: yellow;*/
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
+	/*top: 10px;*/
+	background: #ffd941;
+	background-image: url("https://randomuser.me/api/portraits/lego/1.jpg");
+	background-size: 100px;
+}
+
+.green {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	background: #00C180;
+	background-image: url("https://randomuser.me/api/portraits/lego/7.jpg");
+	background-size: 100px;
+
+}
+
+.mouse::before {
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	content: "";
+	display: block;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	background: #999;
+}
+
+.mouse::after {
+	position: absolute;
+	top: -20px;
+	right: -20px;
+	content: "";
+	display: block;
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	background: #999;
+}
