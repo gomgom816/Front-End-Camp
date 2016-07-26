@@ -1,8 +1,8 @@
 .wrapper {
-	/*background-image: url(../images/grid-system-pattern-10-80-10.png);*/
+	background-image: url(../images/grid-system-pattern-10-80-10.png);
 	background-repeat: repeat;
 	width: 1200px;
-	height: 200vh;
+	height: 250vh;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -42,9 +42,10 @@
 }
 
 .photo-one {
+	// height: 624px;
 	height: 648px;
 	margin-top: 24px;
-	/*padding-bottom: 24px;*/
+	// margin-bottom: 24px;
 	border-bottom: solid 1px;
 }
 .group-one {
@@ -98,3 +99,25 @@
 	height: 96px;
 	background: rgba(48, 48, 48, 0.5);
 }
+
+// .float-frame{
+
+// }
+
+// .float-frame > .right,
+// .float-frame > .left{
+// 	display: block;
+// 	width: 25%;
+// 	box-sizing: border-box;
+// 	min-height: 150px;
+// 	border: 2px solid red;
+// }
+// .float-frame > .right{
+// 	float: right;
+// }
+// .float-frame > .left{
+// 	float: left;
+// }
+// .float-frame > .clearfix{
+// 	clear: both;
+// }
