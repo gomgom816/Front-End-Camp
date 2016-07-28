@@ -1,0 +1,105 @@
+/*@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);*/
+@charset "utf-8";
+
+.sn-banner {
+	position: absolute;
+	width: 800px;
+	height: 320px;
+	top: 50%;
+	left: 50%;
+	margin-top: -160px;
+	margin-left: -400px;
+	overflow: hidden;
+	background: url("../images/web-banner-bg.png") no-repeat;
+	text-shadow: 0 0 4px rgba(0,0,0,0.6);
+}
+
+.sn-banner h1::selection {
+	background-color: #4d222c;
+	color: #cc29d1;
+	text-shadow: none;
+}
+
+.sn-banner * {
+	position: absolute;
+	/* transition:  속성 지속시간 이징곡선 지속시간;*/
+	/*transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);*/
+}
+
+.sn-banner [src$='web-banner-apes.png'] {
+	top: 168px;
+	left: 810px;
+}
+
+.sn-banner [src$='web-banner-golliras.png'] {
+	top: 110px;
+	left: -500px;
+}
+
+.sn-banner [src$='web-banner-kingkong.png'] {
+	top: 330px;
+	left: 491px;
+}
+
+.sn-banner [src$='web-banner-logo.png'] {
+	top: -90px;
+	left: 18px;
+}
+
+.sn-banner.ani-fin [src$='web-banner-apes.png'],
+.sn-banner:hover [src$='web-banner-apes.png'] {
+	top: 168px;
+	left: 4px;
+	transition: all 0.4s ease-out 0.1s;
+}
+
+.sn-banner.ani-fin [src$='web-banner-golliras.png'],
+.sn-banner:hover [src$='web-banner-golliras.png'] {
+	top: 110px;
+	left: 11px;
+	transition: all 0.4s ease-out 0.2s;
+}
+
+.sn-banner.ani-fin [src$='web-banner-kingkong.png'],
+.sn-banner:hover [src$='web-banner-kingkong.png'] {
+	top: 28px;
+	left: 491px;
+	/*transition: all 0.8s ease-out 0.3s;*/
+	transition: all 0.4s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+
+}
+
+.sn-banner.ani-fin [src$='web-banner-logo.png'],
+.sn-banner:hover [src$='web-banner-logo.png'] {
+	top: 17px;
+	left: 18px;
+	transition: all 0.4s ease-in 0.4s;
+}
+
+.sn-banner h1 {
+	opacity: 0;
+	font-family: 'Spoqa Han Sans', 'Sans-serif';
+	width: 320px;top: 28px;
+	left: 121px;margin: 0;
+	font-weight: 700;
+	color: #fff;
+	font-style: italic;
+	font-size: 33px;
+	line-height: 1.060606061;
+	letter-spacing: -0.02em;
+}
+
+.sn-banner:hover h1 {
+	animation: fadeIn 0.8s ease-out forwards 0.8s;
+}
+/*애니메이션*/
+/*animation: 이름 지속시간 이징곡선 지연시간*/
+
+/*애니메이션 정의*/
+/*페이드인/아웃*/
+
+@keyframes fadeIn {
+	from { opacity: 0; }
+	to { opacity: 1; }
+
+}

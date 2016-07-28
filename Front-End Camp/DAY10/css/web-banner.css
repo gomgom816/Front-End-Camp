@@ -1,0 +1,48 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+
+.sn-banner {
+	position: absolute;
+	width: 800px;
+	height: 320px;
+	top: 50%;
+	left: 50%;
+	margin-top: -160px;
+	margin-left: -400px;
+	overflow: hidden;
+	background: url("../images/web-banner-bg.png") no-repeat;
+}
+
+.sn-banner * {
+	position: absolute;
+}
+.sn-banner h1 {
+	font-family: "Spoqa Han Sans", sans-serif;
+	width: 320px;top: 28px;
+	left: 121px;margin: 0;
+	font-weight: 700;
+	color: #fff;
+	font-style: italic;
+	font-size: 33px;
+	line-height: 1.060606061;
+	letter-spacing: -0.02em;
+}
+
+.apes {
+	top: 170px;
+	left: 4px;
+}
+
+.golliras {
+	top: 111px;
+	left: 12px;
+}
+
+.kingkong {
+	top: 29px;
+	left: 492px;
+}
+
+.logo {
+	top: 18px;
+	left: 19px;
+}
