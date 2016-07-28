@@ -21,6 +21,12 @@ body {
 	clear: both;
 }
 
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
 /*.child-1 ~ .child-4 공통 스타일 모듈*/
 [class*="child-"] {
 	float: left;
