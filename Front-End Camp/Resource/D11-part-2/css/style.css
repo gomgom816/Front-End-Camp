@@ -1,0 +1,38 @@
+@charset "utf-8";
+/*! style.css © yamoo9.net, 2016 */
+html {
+  overflow-y: scroll;
+  font-size: 100%;
+  box-sizing: border-box;
+}
+*, *:before, *:after { box-sizing: inherit; }
+body { margin: 0; font-size: 1rem; line-height: 1.5; }
+body.show-grid::before {
+  content: '';
+  position: absolute;
+  z-index: 10000;
+  top: 0;
+  left: 50%;
+  width: 940px;
+  height: 100vh;
+  margin-left: -470px;
+  background: url("../images/pattern-80-20.png");
+}
+/*
+$header-bg:                     #4D4A49;
+$header-logo:                   #F3977B;
+$content-01-bg:                 #F7D1C5;
+$content-03-indicator-deactive: #FDB29A;
+$body-text:                     #5A5E65;
+$content-06-input:              #DADEE7;
+$content-06-input-text:         #A5A5A7;
+$footer-bg:                     #D5D2D0;
+*/
+/**
+ * --------------------------------
+ * .page-header
+ */
+.page-header {
+  background: #4D4A49;
+  height: 120px;
+}
