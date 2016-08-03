@@ -16,39 +16,28 @@ html {
 	font-size: 100%;
 }
 
-*, *::befort, *::after { box-sizing: inherit; }
+*, *::before, *::after { box-sizing: inherit; }
 
-body {margin: 0; font-family: Arial; font-size: 1rem; line-height: 1.5;}
+body { margin: 0; font-family: Arial; font-size: 1rem; line-height: 1.5; }
 
 body.show-grid::before {
-	content: '';
-	position: absolute; /*body가 아닌 경우 부모에 position: relative; 적용*/
-	top: 0;
-	left: 50%;
+	content: "";
 	background: url(../images/pattern-80-20.png);
 	z-index: 10000;
-	/*background: #000000;*/
 	width: 940px;
+	position: absolute;
+	left: 50%;
+	top: 0;
 	height: 260vh;
 	margin-left: -470px;
 }
 
-.page-header {
-	background: #4d4a49;
-	height: 120px;
-}
-
-.page-header * {
-	margin-top: 0;
-}
-
-
-/*시작::공통 모듈 (조립 가능한 작은 단위의 부품, 스타일 클래스)*/
+/* 공통 모듈 :: 시작 */
 
 .wrapper {
 	width: 940px;
-	margin-left: auto;
 	margin-right: auto;
+	margin-left: auto;
 }
 
 .clearfix::after {
@@ -57,21 +46,40 @@ body.show-grid::before {
 	clear: both;
 }
 
-/*끝::공통 모듈*/
+/* 공통 모듈 :: 끝 */
+
+.page-header {
+	background: #4d4a49;
+	height: 120px;
+}
+
+.page-header * {
+	margin-top: 0px;
+}
 
 .page-header a {
-    display: block;
+	text-decoration: none;
+	color: #F3977B;
+	display: block;
 }
 
 .page-header .brand {
-    margin-top: 40px;
-    float: left;
+	padding-top: 34px;
+	float: left;
+}
+
+span {
+	font-size: 1.5rem;
+}
+
+.fa-paint-brush {
+	margin-right: 10px;
 }
 
 .page-gnb {
 	float: right;
 	margin-top: 35px;
-	margin-right: -34px;
+	margin-right: -32px;
 }
 
 .page-gnb ul {
@@ -83,11 +91,9 @@ body.show-grid::before {
 
 .page-gnb li {
 	float: left;
-	/*margin-left: 64px;*/
 }
 
 .page-gnb a {
-	text-decoration: none;
 	color: #fff;
 	line-height: 0.1em;
 	text-transform: uppercase;
@@ -102,5 +108,34 @@ body.show-grid::before {
 
 .page-gnb li.on a {
 	cursor: default;
-	color: #f3977b;
+	color: #f3987b;
+}
+
+.content-01 {
+	background: #F7D1C5;
+	height: 408px;
+}
+
+.top-slider {
+	padding-top: 136px;
+	text-align: center;
+}
+
+.btn-set {
+	/*padding: 1em;*/
+}
+
+.arrow-left {
+	float: left;
+	margin-left: 10px;
+}
+
+.arrow-right {
+	float: right;
+	margin-right: 10px;
+}
+
+.fa-photo {
+	color: #fff;
+	margin-top: 36px;
 }
