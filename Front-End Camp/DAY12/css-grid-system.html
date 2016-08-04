@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>CSS Grid System</title>
+	<!-- 브라우저 스타일 일반화 파 -->
+	<link rel="stylesheet" type="text/css" href="../Resource/ress.min.css">
+	<!-- CSS 그리드 시스템 파일 -->
+	<link rel="stylesheet" type="text/css" href="../Resource/GS-1200px-12col.css">
+</head>
+<style type="text/css">
+	/* 실제 디자이너가 그래픽 목업 데이터를 주었을 때 설정하는 스타일 디자인 코드 */
+	.box-style {
+		height: 100px;
+		background: #000000;
+		color: #ffffff;
+		margin-bottom: 10px;
+	}
+	.box-color-red {
+		background: #FF0000;
+	}
+	.box-align-center {
+		text-align: center;
+		line-height: 100px;
+	}
+</style>
+<body>
+	<div class="container show-grid">
+		<div class="row">
+			<div class="col-1 box-style box-align-center">col-1</div>
+			<div class="col-1 box-style box-align-center box-color-red">col-1</div>
+			<div class="col-1 box-style box-align-center">col-1</div>
+			<div class="col-1 box-style box-align-center box-color-red">col-1</div>
+			<div class="col-1 box-style box-align-center">col-1</div>
+			<div class="col-1 box-style box-align-center box-color-red">col-1</div>
+			<div class="col-1 box-style box-align-center">col-1</div>
+			<div class="col-1 box-style box-align-center box-color-red">col-1</div>
+			<div class="col-1 box-style box-align-center">col-1</div>
+			<div class="col-1 box-style box-align-center box-color-red">col-1</div>
+			<div class="col-1 box-style box-align-center">col-1</div>
+			<div class="col-1 box-style box-align-center box-color-red">col-1</div>
+		</div>
+
+	 	<!--
+		<div class="row row">
+			<div class="col-1 box-style box-align-center">col-1</div>
+			<div class="col-1 box-style box-align-center box-color-red">col-1</div>
+			<div class="col-1 box-style box-align-center">col-1</div>
+			<div class="col-1 box-style box-align-center box-color-red">col-1</div>
+			<div class="col-1 box-style box-align-center">col-1</div>
+			<div class="col-1 box-style box-align-center box-color-red">col-1</div>
+		</div>
+		<div class="row">
+			<div class="col-1 box-style box-align-center">col-1</div>
+			<div class="col-1 box-style box-align-center box-color-red">col-1</div>
+			<div class="col-1 box-style box-align-center">col-1</div>
+			<div class="col-1 box-style box-align-center box-color-red">col-1</div>
+			<div class="col-1 box-style box-align-center">col-1</div>
+			<div class="col-1 box-style box-align-center box-color-red">col-1</div>
+		</div>
+		-->
+		<div class="row">
+			<div class="col-2 box-style box-align-center">col-2</div>
+			<div class="col-2 box-style box-align-center box-color-red">col-2</div>
+			<div class="col-2 box-style box-align-center">col-2</div>
+			<div class="col-2 box-style box-align-center box-color-red">col-2</div>
+			<div class="col-2 box-style box-align-center">col-2</div>
+			<div class="col-2 box-style box-align-center box-color-red">col-2</div>
+		</div>
+
+		<div class="row">
+			<div class="col-3 box-style box-align-center">col-3</div>
+			<div class="col-3 box-style box-align-center box-color-red">col-3</div>
+			<div class="col-3 box-style box-align-center">col-3</div>
+			<div class="col-3 box-style box-align-center box-color-red">col-3</div>
+		</div>
+
+		<div class="row">
+			<div class="col-4 box-style box-align-center">col-4</div>
+			<div class="col-4 box-style box-align-center box-color-red">col-4</div>
+			<div class="col-4 box-style box-align-center">col-4</div>
+		</div>
+
+		<div class="row">
+			<div class="col-5 box-style box-align-center">col-5</div>
+			<div class="col-2 box-style box-color-red box-align-center">col-2</div>
+			<div class="col-5 box-style box-align-center">col-5</div>
+		</div>
+
+		<div class="row">
+			<div class="col-6 box-align-center box-style">col-6</div>
+			<div class="col-6 box-align-center box-style box-color-red">col-6</div>
+		</div>
+
+		<div class="row">
+			<div class="col-7 box-style box-align-center">col-7</div>
+			<div class="col-5 box-style box-align-center box-color-red">col-5</div>
+		</div>
+
+		<div class="row">
+			<div class="col-8 box-style box-align-center">col-8</div>
+			<div class="col-2 box-style box-align-center box box-color-red">col-2</div>
+			<div class="col-2 box-style box-align-center box">col-2</div>
+		</div>
+
+		<div class="row">
+			<div class="col-9 box-style box-align-center">col-9</div>
+			<div class="col-1 box-style box-align-center box-color-red">col-1</div>
+			<div class="col-2 box-style box-align-center">col-2</div>
+		</div>
+
+		<div class="row">
+			<div class="col-10 box-style box-align-center">col-10</div>
+			<div class="col-2 box-style box-align-center box-color-red">col-2</div>
+		</div>
+
+		<div class="row">
+			<div class="col-11 box-style box-align-center">col-11</div>
+			<div class="col-1 box-style box-align-center box-color-red">col-1</div>
+		</div>
+
+		<div class="row">
+			<div class="col-12 box-style box-align-center">col-12</div>
+		</div>
+	</div>
+
+	<script src="../Resource/toggleGrid.js"></script>
+</body>
+</html>
