@@ -15,6 +15,7 @@ $footer-bg:                     #D5D2D0;
 html {
 	overflow-y: scroll;
 	font-size: 100%;
+	box-sizing: border-box;
 }
 
 *, *::before, *::after { box-sizing: inherit; }
