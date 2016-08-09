@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>960 Grid System</title>
+	<style type="text/css">
+		body {
+			font-size: 16px;
+			line-height: 1.5;
+		}
+		.box {
+			padding-top: 24px;
+			padding-bottom: 24px;
+			background: #61eada;
+			margin-bottom: 24px;
+		}
+		.box-align-center {
+			text-align: center;
+			line-height: 1.5;
+	}
+	</style>
+	<!-- 브라우저 스타일 일반화 파일 -->
+	<link rel="stylesheet" type="text/css" href="../Resource/ress.min.css">
+	<!-- 960gs.css 파일 로드 -->
+	<link rel="stylesheet" type="text/css" href="../Resource/960gs.css">
+</head>
+<body class="show-leading">
+
+	<div class="container show-grid">
+		<div class="row">
+			<div class="box box-align-center col-6">col-6</div>
+			<div class="box box-align-center col-6">col-6</div>
+		</div>
+		<div class="row">
+			<div class="box box-align-center col-4">gallery</div>
+			<div class="box box-align-center prefix-4 col-4">gallery</div>
+			<!-- <div class="box col-4">gallery</div> -->
+			<!-- <div class="box col-4">gallery</div> -->
+		</div>
+	</div>
+
+	<script src="../Resource/toggleGrid.js"></script>
+
+</body>
+</html>

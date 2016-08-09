@@ -35,74 +35,101 @@
 }
 
 /*공통 모듈*/
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
-	float: left;
-}
 
-/*.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
-	float: right;
-}
-*/
+[class*="col-"] { float:left; }
 
-
+[class*="push-"],
+[class*="pull-"]
+	{ position: relative; }
+ㅁ
 /*컬럼 모듈*/
 
-.col-1 {
-	width: 100px;
-	/*float: left;*/
-}
+.col-1 { width: 100px; }
+.col-2 { width: 200px; }
+.col-3 { width: 300px; }
+.col-4 { width: 400px; }
+.col-5 { width: 500px; }
+.col-6 { width: 600px; }
+.col-7 { width: 700px; }
+.col-8 { width: 800px; }
+.col-9 { width: 900px; }
+.col-10 { width: 1000px; }
+.col-11 { width: 1100px; }
+.col-12 { width: 1200px; }
 
-.col-2 {
-	width: 200px;
-	/*float: left;*/
-}
+/*
+	<div class="push-..."></div>
+	[class^="push-"]
+	시작하는 클래스
+	<div class="...push-"></div>
+	[class$="push-"]
+	끝나는 클래스
+*/
 
-.col-3 {
-	width: 300px;
-	/*float: left;*/
-}
+/*
+	<div class="... push- ..."></div>
+	[class*="push-"] { position: relative; }
+ */
 
-.col-4 {
-	width: 400px;
-	/*float: left;*/
-}
+/*푸쉬 (Push) / 풀 (Pull) 모듈 */
+.push-1 { left: 100px; }
+.push-2 { left: 200px; }
+.push-3 { left: 300px; }
+.push-4 { left: 400px; }
+.push-5 { left: 500px; }
+.push-6 { left: 600px; }
+.push-7 { left: 700px; }
+.push-8 { left: 800px; }
+.push-9 { left: 900px; }
+.push-10 { left: 1000px; }
+.push-11 { left: 1100px; }
+.push-12 { left: 1200px; }
 
-.col-5 {
-	width: 500px;
-	/*float: left;*/
-}
+.pull-1 { left: -100px; }
+.pull-2 { left: -200px; }
+.pull-3 { left: -300px; }
+.pull-4 { left: -400px; }
+.pull-5 { left: -500px; }
+.pull-6 { left: -600px; }
+.pull-7 { left: -700px; }
+.pull-8 { left: -800px; }
+.pull-9 { left: -900px; }
+.pull-10 { left: -1000px; }
+.pull-11 { left: -1100px; }
+.pull-12 { left: -1200px; }
 
-.col-6 {
-	width: 600px;
-	/*float: left;*/
-}
+/* 프리픽스 (prefix) / 서픽스 (suffix) 모듈 */
 
-.col-7 {
-	width: 700px;
-	/*float: left;*/
-}
+/*
+prefix > margin-left
+*/
 
-.col-8 {
-	width: 800px;
-	/*float: left;*/
-}
+.prefix-1 { margin-left: 100px; }
+.prefix-2 { margin-left: 200px; }
+.prefix-3 { margin-left: 300px; }
+.prefix-4 { margin-left: 400px; }
+.prefix-5 { margin-left: 500px; }
+.prefix-6 { margin-left: 600px; }
+.prefix-7 { margin-left: 700px; }
+.prefix-8 { margin-left: 800px; }
+.prefix-9 { margin-left: 900px; }
+.prefix-10 { margin-left: 1000px; }
+.prefix-11 { margin-left: 1100px; }
+.prefix-12 { margin-left: 1200px; }
 
-.col-9 {
-	width: 900px;
-	/*float: left;*/
-}
+/*
+suffix > margin-right
+*/
 
-.col-10 {
-	width: 1000px;
-	/*float: left;*/
-}
-
-.col-11 {
-	width: 1100px;
-	/*float: left;*/
-}
-
-.col-12 {
-	width: 1200px;
-	/*float: left;*/
-}
+.suffix-1 { margin-right: 100px; }
+.suffix-2 { margin-right: 200px; }
+.suffix-3 { margin-right: 300px; }
+.suffix-4 { margin-right: 400px; }
+.suffix-5 { margin-right: 500px; }
+.suffix-6 { margin-right: 600px; }
+.suffix-7 { margin-right: 700px; }
+.suffix-8 { margin-right: 800px; }
+.suffix-9 { margin-right: 900px; }
+.suffix-10 { margin-right: 1000px; }
+.suffix-11 { margin-right: 1100px; }
+.suffix-12 { margin-right: 1200px; }
