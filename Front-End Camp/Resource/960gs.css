@@ -21,7 +21,7 @@ body.show-leading::before {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 235vh;
+	height: 410vh;
 	background: linear-gradient(transparent 23px, rgba(255, 0, 0, 0.3) 23px);
 	background-size: 1px 24px;
 }
@@ -42,7 +42,7 @@ body.show-leading::before {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 235vh;
+	height: 410vh;
 	background: linear-gradient(90deg, transparent 10px, rgba(0, 127, 251, 0.2) 10px, rgba(0, 127, 251, 0.2) 70px, transparent 70px);
 	background-size: 80px 1px;
 
