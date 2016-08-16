@@ -1,5 +1,6 @@
 .container {
-	width: 1080px;
+	/*width: 1080px;*/
+	width: 100%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -16,8 +17,8 @@
 	z-index: 10000;
 	width: 100%;
 	height: 500vh;
-	background: linear-gradient(90deg, transparent 15px, rgba(0, 127, 251, 0.2) 15px, rgba(0, 127, 251, 0.2) 105px, transparent 105px);
-	background-size: 120px 1px;
+	background: linear-gradient(90deg, transparent 1.3888888888888888%, rgba(0, 127, 251, 0.2) 1.3888888888888888%, rgba(0, 127, 251, 0.2) 9.722222222222223%, transparent 9.722222222222223%);
+	background-size: 8.333333333333332% 1px;
 }
 
 /* row 모듈 */
@@ -31,8 +32,8 @@
 
 [class*="col-"] {
 	float: left;
-	margin-right: 15px;
-	margin-left: 15px;
+	margin-right: 1.3888888888888888%;
+	margin-left: 1.3888888888888888%;
 }
 
 [class*="push-"],

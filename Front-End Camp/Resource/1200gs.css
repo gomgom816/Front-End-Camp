@@ -27,7 +27,9 @@ body.show-leading::before {
 }
 
 .container {
-	width: 1200px;
+	/*width: 1200px;*/
+	width: 100%;
+	max-width: 1200px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -43,8 +45,8 @@ body.show-leading::before {
 	left: 0;
 	width: 100%;
 	height: 410vh;
-	background: linear-gradient(90deg, transparent 15px, rgba(0, 127, 251, 0.2) 15px, rgba(0, 127, 251, 0.2) 85px, transparent 85px);
-	background-size: 100px 1px;
+	background: linear-gradient(90deg, transparent 1.25%, rgba(0, 127, 251, 0.2) 1.25%, rgba(0, 127, 251, 0.2) 7.083333333333333%, transparent 7.083333333333333%);
+	background-size: 8.333333333333332% 1px;
 
 }
 
@@ -59,8 +61,8 @@ body.show-leading::before {
 
 [class*="col-"] {
 	float: left;
-	margin-right: 15px;
-	margin-left: 15px;
+	margin-right: 1.25%;
+	margin-left: 1.25%;
 }
 
 [class*="push-"],

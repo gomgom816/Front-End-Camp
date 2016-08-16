@@ -1,0 +1,141 @@
+/*
+설계 ( design ) 내용 요약
+
+컬럼의 개수: 12;
+컬럼 (Column) 가로 폭: 60px;
+거터 (Gutter) 방향: 양쪽(Split);
+거터의 간격: 20px (10px * 2);
+페이지의 폭: 960 - (10*2) = 940px;
+*/
+
+/*container 모듈*/
+/*body {
+	position: relative;
+}*/
+
+/*Javascript Code*/
+/*function percentage (target, context) {
+	retuen targer/context * 100 + ‘%’;
+}*/
+
+body.show-leading::before {
+	content: '';
+	position: absolute;
+	z-index: 100000;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 410vh;
+	background: linear-gradient(transparent 23px, rgba(255, 0, 0, 0.3) 23px);
+	background-size: 1px 24px;
+}
+
+.container {
+	/*width: 960px;*/
+	width: 100%;
+	/*max-width: 960px;*/
+	margin-left: auto;
+	margin-right: auto;
+}
+.container.show-grid {
+	position: relative;
+}
+
+.container.show-grid::before {
+	content: '';
+	position: absolute;
+	z-index: 10000;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 410vh;
+	/*background: linear-gradient(90deg, transparent 10px, rgba(0, 127, 251, 0.2) 10px, rgba(0, 127, 251, 0.2) 70px, transparent 70px);*/
+	background: linear-gradient(90deg, transparent 12.5%, rgba(0, 127, 251, 0.2) 12.5%, rgba(0, 127, 251, 0.2) 87.5%, transparent 87.5%);
+	background-size: 8.333333333333332% 1px;
+
+}
+
+/* row 모듈 */
+.row:after, .row::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/* column 모듈 */
+
+[class*="col-"] {
+	float: left;
+	margin-right: 1.0416666666666665%; /*(10px / 960px) * 100*/
+	margin-left: 1.0416666666666665%;
+}
+
+[class*="push-"],
+[class*="pull-"] {
+	position: relative;
+}
+
+.col-1 { width: 6.25% }
+.col-2 { width: 14.583333333333334% }
+.col-3 { width: 22.916666666666664% }
+.col-4 { width: 31.25% }
+.col-5 { width: 39.58333333333333% }
+.col-6 { width: 47.91666666666667% }
+.col-7 { width: 56.25% }
+.col-8 { width: 64.58333333333334% }
+.col-9 { width: 72.91666666666666% }
+.col-10 { width: 81.25% }
+.col-11 { width: 89.58333333333334% }
+.col-12 { width: 97.91666666666666% }
+
+.push-1 { left: 8.333333333333332%; }
+.push-2 { left: 16.666666666666664%; }
+.push-3 { left: 25%; }
+.push-4 { left: 33.33333333333333%; }
+.push-5 { left: 41.66666666666667%; }
+.push-6 { left: 50%; }
+.push-7 { left: 58.333333333333336%; }
+.push-8 { left: 66.66666666666666%; }
+.push-9 { left: 75%; }
+.push-10 { left: 83.33333333333334%; }
+.push-11 { left: 91.66666666666666%; }
+.push-12 { left: 100%; }
+
+.pull-1 { left: -8.333333333333332%; }
+.pull-2 { left: -16.666666666666664%; }
+.pull-3 { left: -25%; }
+.pull-4 { left: -33.33333333333333%; }
+.pull-5 { left: -41.66666666666667%; }
+.pull-6 { left: -50%; }
+.pull-7 { left: -58.333333333333336%; }
+.pull-8 { left: -66.66666666666666%; }
+.pull-9 { left: -75%; }
+.pull-10 { left: -83.33333333333334%; }
+.pull-11 { left: -91.66666666666666%; }
+.pull-12 { left: -100%; }
+
+.prefix-1 { margin-left: 9.375%; }
+.prefix-2 { margin-left: 17.708333333333336%; }
+.prefix-3 { margin-left: 26.041666666666668%; }
+.prefix-4 { margin-left: 34.375%; }
+.prefix-5 { margin-left: 42.70833333333333%; }
+.prefix-6 { margin-left: 51.041666666666664%; }
+.prefix-7 { margin-left: 59.375%; }
+.prefix-8 { margin-left: 67.70833333333334%; }
+.prefix-9 { margin-left: 76.04166666666666%; }
+.prefix-10 { margin-left: 84.375%; }
+.prefix-11 { margin-left: 92.70833333333334%; }
+.prefix-12 { margin-left: 101.04166666666667%; }
+
+.suffix-1 { margin-right: 9.375%; }
+.suffix-2 { margin-right: 17.708333333333336%; }
+.suffix-3 { margin-right: 26.041666666666668%; }
+.suffix-4 { margin-right: 34.375%; }
+.suffix-5 { margin-right: 42.70833333333333%; }
+.suffix-6 { margin-right: 51.041666666666664%; }
+.suffix-7 { margin-right: 59.375%; }
+.suffix-8 { margin-right: 67.70833333333334%; }
+.suffix-9 { margin-right: 76.04166666666666%; }
+.suffix-10 { margin-right: 84.375%; }
+.suffix-11 { margin-right: 92.70833333333334%; }
+.suffix-12 { margin-right: 101.04166666666667%; }

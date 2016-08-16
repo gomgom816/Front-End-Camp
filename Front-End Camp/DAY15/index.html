@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>유동 그리드 시스템 _ 960GS</title>
+	<!-- 브라우저 사이에 발생하는 차이점을 일반화 시키는 CSS 초기화 라이브러리 -->
+	<link rel="stylesheet" type="text/css" href="../Resource/normalize.css">
+	<!-- 우리가 손수 제작한 유동 그리드 시스템 (레이아웃 모듈) -->
+	<link rel="stylesheet" type="text/css" href="css/960gs-fluid.css">
+	<style>
+		body {
+			font-size: 16px;
+			line-height: 1.5;
+			color: #fff;
+		}
+		.box {
+			padding-top: 24px;
+			padding-bottom: 24px;
+			margin-bottom: 24px;
+			background: #333333;
+		}
+
+		.box-align-center {
+			text-align: center;
+		}
+	</style>
+</head>
+<body class="show-leading">
+	<div class="container show-grid">
+		<div class="row">
+			<div class="col-6 box box-align-center">col-6</div>
+			<div class="col-6 box box-align-center">col-6</div>
+		</div>
+
+		<div class="row">
+			<div class="col-4 box box-align-center">col-4</div>
+			<div class="col-8 box box-align-center">col-8</div>
+		</div>
+		<div class="row">
+			<div class="col-1 box box-align-center">col-1</div>
+			<div class="col-2 box box-align-center">col-2</div>
+			<div class="col-3 box box-align-center">col-3</div>
+			<div class="col-6 box box-align-center">col-6</div>
+		</div>
+		<div class="row">
+			<div class="col-3 box box-align-center prefix-1">col-3</div>
+			<div class="col-3 box box-align-center">col-3</div>
+			<div class="col-3 box box-align-center">col-3</div>
+		</div>
+	</div>
+</body>
+</html>
