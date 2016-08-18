@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>Responsive PC Page</title>
+	<link rel="stylesheet" type="text/css" href="../Resource/normalize.css">
+	<link rel="stylesheet" href="css/responsive-pc.css">
+</head>
+<style>
+	body {
+		font-size: 16px;
+		line-height: 1.5rem;
+		color: #333;
+	}
+	.page-header {
+		height: 108px;
+		background: #fff;
+		text-align: center;
+		box-sizing: border-box;
+		padding-top: 42px;
+		padding-bottom: 42px;
+	}
+	.slideItem {
+		height: 540px;
+		background: #50BE9B;
+	}
+	.box {
+		height: 500px;
+		background: #B8E986;
+	}
+	.box-1 {
+		height: 500px;
+		background: #9DD169;
+	}
+	.box-2 {
+		height: 250px;
+		background: #00ADEF;
+	}
+	.box-2-2 {
+		height: 250px;
+		background: #009AD4;
+	}
+    /*.box-2:nth-child(2n) {
+      background: #009AD4;
+    }*/
+	.more-list {
+		height: 244px;
+		background: #ebebeb;
+	}
+	footer {
+		background: #000000;
+		height: 430px;
+	}
+</style>
+<body>
+	<div class="container">
+		<header class="page-header">HEADER</header>
+		<div class="row">
+			<div class="slideItem col-4"></div>
+		</div>
+		<div class="row">
+			<div class="box col-2"></div>
+			<ul>
+				<li class="box-2 col-1"></li>
+				<li class="box-2-2 col-1"></li>
+				<li class="box-2-2 col-1"></li>
+				<li class="box-2 col-1"></li>
+			</ul>
+		</div>
+		<div class="row">
+			<ul class="col-2">
+				<li class="box-2 col-1"></li>
+				<li class="box-2-2 col-1"></li>
+				<li class="box-2-2 col-1"></li>
+				<li class="box-2 col-1"></li>
+			</ul>
+			<div class="box-1 col-2"></div>
+		</div>
+		<div class="row">
+			<div class="box col-2"></div>
+			<ul>
+				<li class="box-2 col-1"></li>
+				<li class="box-2-2 col-1"></li>
+				<li class="box-2-2 col-1"></li>
+				<li class="box-2 col-1"></li>
+			</ul>
+		</div>
+		<div class="more-list col-4"></div>
+		<footer class="col-4"></footer>
+	</div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>RWD</title>
+	<link rel="stylesheet" type="text/css" href="../Resource/normalize.css">
+	<link rel="stylesheet" type="text/css" href="../Resource/rwd-grid.css">
+
+	<style>
+		.box {
+			background: #cecece;
+			color: #212121;
+			text-align: center;
+			padding-top: 1rem;
+			padding-bottom: 1rem;
+		}
+		.box:nth-child(2n) {
+			background: #ececec;
+			color: #212121;
+			text-align: center;
+			padding-top: 1rem;
+			padding-bottom: 1rem;
+		}
+	</style>
+</head>
+<body>
+	<div class="grid grid-adapt">
+		<div class="box m-1 t-1-2 offset-t-1-2 d-2-7 w-3-8">
+			mobile first
+		</div>
+		<div class="row">
+			<div class="box m-1 t-1 d-1 w-1">mtdw</div>
+		</div>
+		<div class="row">
+			<div class="box m-1 t-1 d-1-2 w-1-2">mtdw</div>
+			<div class="box m-1 t-1 d-1-2 w-1-2">mtdw</div>
+		</div>
+	</div>
+</body>
+</html>
