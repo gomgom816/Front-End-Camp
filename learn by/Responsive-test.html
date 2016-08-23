@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<link rel="stylesheet" type="text/css" href="Resources/normalize.css">
+	<link rel="stylesheet" type="text/css" href="Resources/rwd-grid.css">
+
+	<style>
+	/*PC*/
+	@media screen and (min-width: 1200px) {
+		.page-header { height: 108px; }
+		.slideshow { height: 540px; }
+		.title-photo-1 { height: 500px; }
+
+		/*.selection.selection-lv1,
+		.selection.selection-lv2{
+			display: inline-block;
+			width: 50%;*/
+		}
+	}
+
+	/*Tablet*/
+	@media screen and (min-width: 1199px) and (max-width: 800px) {
+		.slideshow { height: 360px; }
+		.title-photo-1 { height: 666px; }
+
+		./*selection.selection-lv2{
+			display: inline-block;
+			width: 50%;*/
+		}
+	}
+
+	/*.selection{
+		display: block;
+		width: 100%;
+		height: 500px;
+	}
+
+	.selection.green1{
+		background-color: green;
+	}
+	.selection.green2{
+		background-color: green;
+	}
+
+	.selection.blue1{
+		background-color: blue;
+	}
+	.selection.blue2{
+		background-color: blue;
+	}*/
+
+
+
+		/* flexible box : IE 10+ */
+	    .align-hv-center {
+	    	display: flex;
+	    	justify-content: center;
+	   		align-items: center;
+	    }
+		/* page header */
+	    .page-header {
+	    	background: #f1f1f1;
+	    	height: 72px;
+	    }
+
+	    /* article */
+	    .slideshow {
+	    	background: #50BE9B;
+	    	height: 180px;
+	    }
+
+		.title-photo-1 {
+			background: #B8E986;
+			height: 333px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<header class="page-header m-1 t-1 d-1"></header>
+		<article class="slideshow m-1 t-1 d-1"></article>
+		<div class="row">
+			<article class="title-photo-1 m-1 t-1 d-2-4"></article>
+		</div>
+	</div>
+</body>
+</html>

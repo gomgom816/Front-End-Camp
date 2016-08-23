@@ -1,0 +1,67 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400; /* Regular */
+}
+
+.montserrat {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400; /* Regular */
+}
+
+.pt-serif { font-family: 'PT Serif', serif; }
+
+/**
+ * .menu
+ */
+
+.menu .menu-tel {
+	margin-top: 40px;
+	font-size: 11px;
+	font-size: 0.6875rem;
+	letter-spacing: 0.17em;
+	line-height: 1.818181818;
+	color: #3c3d48;
+	background: url("../images/icons/Icon-headset.svg") no-repeat 0 1px;
+	padding-left: 28px;
+}
+
+.menu .brand {
+	margin-top: 40px;
+	font-size: 24px;
+	font-size: 1.5rem;
+	font-weight: 700;
+	line-height: 0.833333333;
+	text-align: center;
+	color: #3c3d48;
+}
+
+.menu .unb {
+	float: right;
+}
+
+.menu .lang {
+	background: url(../images/icons/Icon-select.svg) no-repeat;
+}
+
+.menu button {
+	background: none;
+	border: 0;
+	font-size: 11px;
+	font-size: 0.6875rem;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400; /* Regular */
+	line-height: 0.833333333;
+	color: #3c3d48;
+}
+
+.menu li {
+   visibility: hidden;
+}
+
+.menu .btn-lock {
+	background: url(../images/icons/Icon-lock.svg) no-repeat;
+}
+
+.menu .btn-login {
+	color: #5b5d69;
+}

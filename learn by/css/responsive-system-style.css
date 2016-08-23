@@ -1,0 +1,11 @@
+.photo-slide {
+	background: #50BE9B;
+	display: block;
+}
+
+/*.photo:nth-child(2n) {
+	background: #009AD4;
+}
+.photo:nth-child(3n) {
+	background: #009AD4;
+}*/

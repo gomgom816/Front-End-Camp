@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>문서 제목</title>
+	<link rel="stylesheet" type="text/css" href="Resources/normalize.css">
+	<link rel="stylesheet" type="text/css" href="Resources/responsive-system.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive-system-style.css">
+
+	<style>
+		/* Mobile */
+
+		.page-header { height: 72px; }
+		.photo-slide { min-height: 180px; }
+		.title-photo { height: 333px; background: #B8E986; }
+		.photo { height: 333px; background: #00ADEF; }
+		.photo2 { height: 333px; background: #009AD4; }
+		.more-content { height: 244px; background: #ffffff;}
+		footer { height: 1301px; background: #000000; }
+		/* Tablet */
+		@media screen and (min-width: 800px) and (max-width: 1199px) {
+			.page-header { height: 72px; }
+			.photo-slide { min-height: 360px; }
+			.title-photo { height: 666px; background: #B8E986; }
+			.photo { height: 333px; background: #00ADEF; }
+
+			.photo2 { height: 333px; background: #009AD4; }
+			footer { height: 791px; background: #000000; }
+		}
+
+		/* PC */
+		@media screen and (min-width: 1200px) {
+			.page-header { height: 108px; }
+			.photo-slide { min-height: 540px; }
+			.title-photo { height: 500px; background: #B8E986; }
+			.photo { height: 250px; background: #00ADEF; }
+			.photo2 { height: 250px; background: #009AD4; }
+			footer { height: 430px; background: #000000; }
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container grid">
+		<header class="grid page-header m-1 t-1 d-1"></header>
+		<article class="grid photo-slide m-1 t-1 d-1"></article>
+		<div class="grid">
+			<article class="title-photo m-1 t-1 d-2-4"></article>
+			<article class="grid-photos-1 m-1 t-1 d-2-4">
+				<div class="photo m-1 t-1-2 d-1-2"></div>
+				<div class="photo2 m-1 t-1-2 d-1-2"></div>
+				<div class="photo2 m-1 t-1-2 d-1-2"></div>
+				<div class="photo m-1 t-1-2 d-1-2"></div>
+			</article>
+		</div>
+		<div class="grid">
+			<article class="grid-photos-1 m-1 t-1 d-2-4">
+				<div class="photo m-1 t-1-2 d-1-2"></div>
+				<div class="photo2 m-1 t-1-2 d-1-2"></div>
+				<div class="photo2 m-1 t-1-2 d-1-2"></div>
+				<div class="photo m-1 t-1-2 d-1-2"></div>
+			</article>
+			<article class="title-photo m-1 t-1 d-2-4"></article>
+		</div>
+		<div class="grid">
+			<article class="title-photo m-1 t-1 d-2-4"></article>
+			<article class="grid-photos-1 m-1 t-1 d-2-4">
+				<div class="photo m-1 t-1-2 d-1-2"></div>
+				<div class="photo2 m-1 t-1-2 d-1-2"></div>
+				<div class="photo2 m-1 t-1-2 d-1-2"></div>
+				<div class="photo m-1 t-1-2 d-1-2"></div>
+			</article>
+		</div>
+		<div class="more-content m-1"></div>
+		<footer></footer>
+	</div>
+</body>
+</html>
