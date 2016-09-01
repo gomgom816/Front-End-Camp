@@ -234,13 +234,15 @@ html {
 	right: 3px;
 }
 
+/* 인디케이터 영역 */
+
 /* carousel-indicator */
 
 .carousel-indicator {
 	position: absolute;
 	z-index: 100;
 	left: 50%;
-	bottom: 30px;
+	bottom: 24px;
 	transform: translateX(-50%);
 	/*margin-left: -116px;*/
 
@@ -253,47 +255,33 @@ html {
 }
 .carousel-indicator li {
 	float: left;
-	/*margin: 0 21px;*/
-	margin-left: 21px;
-}
-/*
-.carousel-indicator li:first-child {
-	margin-right: 0;
+	margin: 0 21px;
+	/*margin-left: 21px;*/
 }
 
-.carousel-indicator li:last-child {
-	margin-right: 0;
-}
-*/
 .carousel-indicator button {
 	box-sizing: border-box;
 	display: block;
-	background: none;
-	border-radius: 50%;
 	width: 7px;
 	height: 7px;
-	padding: 0;
 	border: 2px solid #97979e;
+	padding: 0;
+	background: none;
+	border-radius: 50%;
 }
 
 .carousel-indicator .active button {
 	width: 11px;
 	height: 11px;
-	background: #97979e;
-	border: none;
 	margin-top: -2px;
 	margin-left: -2px;
+	border: none;
+	background: #97979e;
 }
-/**
- * ------------------------------
- * Body 영역
- * ------------------------------
- */
 
-main {
-	background: #e5e5e5;
+.content-block {
 	padding-top: 20px;
-	/*margin-top: -16px;*/
+	background: #e5e5e5;
 }
 
 /**
@@ -302,88 +290,15 @@ main {
  * ------------------------------
  */
 
-.banner-container {
-	/*margin-top: 20px;*/
-}
-
-.banner-content {
+.banner-container .banner-content {
 	height: 300px;
 	background: #ffffff;
 	border-radius: 4px;
 }
 
-.banner-container .double-height {
+.banner-container .banner-content.double-height {
 	float: right;
 	height: 620px;
-}
-
-.banner-container a {
-	display: block;
-	width: 170px;
-	height: 43px;
-	background: #e36556;
-	color: #fff;
-	border-radius: 2px;
-	text-align: center;
-	text-decoration: none;
-	text-transform: uppercase;
-	line-height: 43px;
-}
-
-.banner-container .banner-shoes {
-	background: url(../images/banner/shoes.jpg)no-repeat;
-}
-.banner-container .banner-shoes .banner-headline {
-	position: relative;
-	top: 171px;
-}
-
-.banner-container .banner-leather-bags {
-	background: url(../images/banner/leather-bags.jpg) right bottom no-repeat;
-}
-
-.banner-container .banner-leather-bags .banner-headline {
-	text-align: left;
-	position: relative;
-	top: 20px;
-	left: 40px;
-}
-
-.banner-container .banner-women {
-	background: url(../images/banner/woman.jpg) 0 0 no-repeat;
-}
-
-.banner-container .banner-women .banner-headline {
-	position: relative;
-	top: 50%;
-	margin-top: -40px;
-}
-
-.banner-container .banner-women a {
-	position: relative;
-	left: 50%;
-	top: 50%;
-	transform: translateX(-50%);
-	margin-top: -4px;
-}
-
-.banner-container .banner-collection {
-	margin-top: 20px;
-	background: url(../images/banner/collection.jpg) 0 0 no-repeat;
-}
-
-.banner-container .banner-collection .banner-headline {
-	position: relative;
-	top: 20%;
-	right: -30%;
-	margin-right: 46px;
-}
-.banner-container .banner-collection a {
-	position: relative;
-	left: 76%;
-	top: 21%;
-	transform: translateX(-50%);
-	margin-top: -4px;
 }
 
 .banner-container .banner-headline {
@@ -399,8 +314,88 @@ main {
 	text-transform: lowercase;
 	font-style: italic;
 	font-size: 15px;
+	font-weight: 200;
+	letter-spacing: 0.1em;
 	color: #5b5d69;
 }
+
+.banner-container a {
+	/*
+	display: block;
+	width: 170px;
+	height: 43px;
+	text-align: center;
+	line-height: 43px;
+	*/
+	border-radius: 2px;
+	padding: 1.8em 4.8em;
+	background: #e36556;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	font-size: 10px;
+	color: #fff;
+}
+
+.banner-container a:hover,
+.banner-container a:focus {
+	background: #8d342e;
+}
+
+/* banner-shoes */
+
+.banner-container .banner-shoes {
+	background: url(../images/banner/shoes.jpg) no-repeat;
+}
+
+.banner-container .banner-shoes .banner-headline {
+	position: relative;
+	top: 171px;
+}
+
+/* banner-leather-bags */
+
+.banner-container .banner-leather-bags {
+	background: url(../images/banner/leather-bags.jpg) no-repeat;
+}
+
+.banner-container .banner-leather-bags .banner-headline {
+	text-align: left;
+	margin-top: 43px;
+	margin-left: 40px;
+	/*position: relative;
+	top: 20px;
+	left: 40px;*/
+}
+
+/* banner-women */
+
+.banner-container .banner-women {
+	background: url(../images/banner/woman.jpg) no-repeat;
+	text-align: center;
+}
+
+.banner-container .banner-women .banner-headline {
+	margin-top: 245px;
+	margin-left: 42px;
+}
+
+/* banner-collection */
+
+.banner-container .banner-collection {
+	box-sizing: border-box;
+	margin-top: 20px;
+	padding-left: 300px;
+	text-align: center;
+	background: url(../images/banner/collection.jpg) no-repeat;
+}
+
+.banner-container .banner-collection .banner-headline {
+	margin-top: 93px;
+	margin-bottom: 44px;
+}
+
+
 /* 공통 모듈 */
 /*
 [class*="banner-"] {

@@ -8,7 +8,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,400i" rel="stylesheet">
 	<!-- Mobile Optimize View -->
-	<meta name="viewport" content="width=980px, initial-scale=1">
+	<!-- <meta name="viewport" content="width=980px, initial-scale=1"> -->
 	<!-- CSS Style -->
 	<link rel="stylesheet" type="text/css" href="css/normalize.min.css">
 	<link rel="stylesheet" type="text/css" href="css/960gs.css">
@@ -104,7 +104,8 @@
 		</div>
 	</div>
 
- 	<main class="montserrat">
+ 	<main class="content-block montserrat">
+ 	<!-- banner-container -->
 		<div class="banner-container container">
 			<div class="row">
 				<div class="banner-content banner-shoes col-4">
@@ -119,7 +120,7 @@
 					<h3 class="banner-headline">women
 						<span class="PT-serif sub-headline">save 50%</span>
 					</h3>
-					<a href="">shop now</a>
+					<a href="" class="show-now">shop now</a>
 				</div>
 				<div class="banner-content banner-collection col-8">
 					<h3 class="banner-headline">collection
@@ -129,17 +130,79 @@
 				</div>
 			</div>
 		</div>
-
-		<div class="products-container col-12 container">
-			<nav class="products-tabs">
-				<ul>
-					<li><a href="">featured products</a></li>
-					<li><a href="">new arrivals</a></li>
-					<li><a href="">best sellers</a></li>
-				</ul>
-			</nav>
+		<!-- END banner-container -->
+		<!-- products -->
+		<div class="products-tab container">
+			<div class="tab-handle row">
+					<a class="active" href="#featured products" role="button">featured products</a>
+					<a href="#new arrivals" role="button">new arrivals</a>
+					<a href="#best sellers" role="button">best sellers</a>
+			</div>
+			<div class="products row">
+				<div class="featured-products">
+					<!-- product-item -->
+					<div class="product-item" role="group">
+						<div class="nomal-view">
+							<!-- <div class="tag-new">new</div> -->
+							<img src="" alt="">
+							<h4 class="product-name">flowy printed dress</h4>
+							<div class="product-price">$16</div>
+						</div>
+						<div class="hover-focus-view">
+							<a href="" role="button" class="button-add-to-shopping-cart" aria-label="Add To Shopping Cart"></a>
+							<a href="" role="button" class="button-add-to-shopping-wishlist" aria-label="Add To Wishlist"></a>
+						</div>
+					</div>
+					<!-- END product-item -->
+					<!-- product-item -->
+					<div class="product-item" role="group">
+						<div class="nomal-view">
+							<div class="tag-new">new</div>
+							<img src="" alt="">
+							<h4 class="product-name">fitted dress</h4>
+							<div class="product-price">$29,99</div>
+						</div>
+						<div class="hover-focus-view">
+							<a href="" role="button" class="button-add-to-shopping-cart" aria-label="Add To Shopping Cart"></a>
+							<a href="" role="button" class="button-add-to-shopping-wishlist" aria-label="Add To Wishlist"></a>
+						</div>
+					</div>
+					<!-- END product-item -->
+					<!-- product-item -->
+					<div class="product-item" role="group">
+						<div class="nomal-view">
+							<div class="tag-hit">hit</div>
+							<img src="" alt="">
+							<h4 class="product-name">fluted hem dress</h4>
+							<div class="product-price">$48,99</div>
+						</div>
+						<div class="hover-focus-view">
+							<a href="" role="button" class="button-add-to-shopping-cart" aria-label="Add To Shopping Cart"></a>
+							<a href="" role="button" class="button-add-to-shopping-wishlist" aria-label="Add To Wishlist"></a>
+						</div>
+					</div>
+					<!-- END product-item -->
+					<!-- product-item -->
+					<div class="product-item" role="group">
+						<div class="nomal-view">
+							<div class="tag-sale">sale 30%</div>
+							<img src="" alt="">
+							<h4 class="product-name">textured pleats dress</h4>
+							<div class="product-price">$35,99</div>
+						</div>
+						<div class="hover-focus-view">
+							<a href="" role="button" class="button-add-to-shopping-cart" aria-label="Add To Shopping Cart"></a>
+							<a href="" role="button" class="button-add-to-shopping-wishlist" aria-label="Add To Wishlist"></a>
+						</div>
+					</div>
+					<!-- END product-item -->
+				</div>
+				<div id="new-arrivals"></div>
+				<div id="best-sellers"></div>
+			</div>
 		</div>
 	</main>
+
 	<!-- JavaScript-->
 	<script src="js/toggleGrid.js"></script>
 	<script>// document.onkeydown(true);</script>
