@@ -1,0 +1,541 @@
+@charset "utf-8";
+
+/**
+ * --------------------------------
+ * 사용자가 선택한 블록 영역의 스타일
+ * 디자이너 설정하고자 하는 톤앤매너 결정
+ * ----------------------------- */
+/* Firefox */
+::-moz-selection {
+  background: #3c3d48;
+  color: #fff;
+}
+/* Modern Browsers */
+::selection {
+  background: #3c3d48;
+  color: #fff;
+  /*text-shadow: 0 0 10px #fff;*/
+}
+
+/**
+ * ------------------------------
+ * 웹폰트
+ * ------------------------------
+ * Montserrat
+ * PT-serif
+ * ------------------------------
+ */
+
+.montserrat {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400; /* Regular */
+}
+.PT-serif {
+	font-family: 'PT Serif', Serif;
+}
+
+/**
+ * ------------------------------
+ * 베이스 디자인
+ * ------------------------------
+ */
+
+html {
+	overflow-y: scroll;
+	box-sizing: border-box;
+}
+
+/**
+ * ------------------------------
+ * 메뉴(menu) 디자인
+ * ------------------------------
+ */
+
+.menu {
+	border-bottom: 1px solid #f2f2f2;
+	color: #3c3d48;
+}
+.menu .container {
+	padding-top: 30px;
+	padding-bottom: 28px;
+}
+.menu .menu-tel {
+	padding-left: 26px;
+	font-size: 0.6875rem;
+	letter-spacing: 0.17em;
+	line-height: 1.818181818;
+	background: url("../images/icons/Icon-headset.svg") no-repeat 0 1px;
+}
+.menu .brand {
+	margin-top: 10px;
+	margin-bottom: 0;
+	font-size: 1.5rem;
+	font-weight: 700;
+	line-height: 0.833333333;
+	text-align: center;
+}
+.menu .unb {
+	position: relative;
+	margin-top: 10px;
+}
+.menu .unb .lang,
+.menu .unb .currency {
+	float: left;
+	position: relative;
+	width: 50px;
+	height: 20px;
+}
+.menu .unb ul {
+	display: none;
+	position: absolute;
+	top: 0;
+	border: 1px solid #333;
+	width: 50px;
+	margin: 0;
+	padding-left: 0;
+	list-style-type: none;
+	background: #fff;
+}
+.menu button {
+	display: block;
+	border: none;
+	padding: 3px;
+	text-transform: uppercase;
+	font-size: 11px;
+	font-size: 0.69rem;
+	font-family: inherit;
+	background: none;
+}
+.unb .lang button,
+.unb .currency button {
+	width: 50px;
+	height: 20px;
+}
+.unb .lang > button,
+.unb .currency > button {
+	background: url("../images/icons/Icon-select.svg") no-repeat center right;
+}
+.unb .lang {
+	position: relative;
+	left: -25px;
+}
+.unb .currency {
+	position: relative;
+	left: -17px;
+}
+.unb .btn-lock {
+	float: left;
+	overflow: hidden;
+	width: 20px;
+	margin-left: 15px;
+	text-indent: -9999em;
+	background: url("../images/icons/Icon-lock.svg") no-repeat 0 1px;
+}
+.unb .btn-login {
+	float: left;
+	position: relative;
+	left: 20px;
+	padding-left: 22px;
+	font-size: 10px;
+	font-size: 0.625rem;
+	letter-spacing: 0.17em;
+	color: #5b5d69;
+	background: url("../images/icons/Icon-face.svg") no-repeat 0 1px;
+	background-size: 12px 16px;
+}
+
+/**
+ * ------------------------------
+ * 글로벌 내비게이션(gnb) 영역
+ * ------------------------------
+ */
+
+.gnb ul {
+	margin: 14px 0 0 0;
+	padding: 0 10px;
+}
+.gnb li {
+	float: left;
+}
+.gnb li:last-child a {
+	position: relative;
+	right: -4px;
+	margin-right: 0;
+	padding-right: 0;
+}
+.gnb li.has-sub-menu a {
+	padding-right: 12px;
+	background: url("../images/icons/Icon-select.svg") no-repeat right center;
+}
+.gnb a {
+	display: block;
+	margin-right: 40px;
+	padding-top: 15px;
+	padding-bottom: 14px;
+	font-size: 11px;
+	font-size: 0.6875rem;
+	letter-spacing: 0.2em;
+	text-decoration: none;
+	text-transform: uppercase;
+	line-height: 1;
+	vertical-align: top;
+	color: #3c3d38;
+}
+
+/**
+ * ------------------------------
+ * 캐로셀(carousel) 영역
+ * ------------------------------
+ */
+
+
+.carousel {
+	position: relative;
+	overflow: hidden;
+	height: 580px;
+	margin-top: 14px;
+}
+.carousel-content {
+	position: relative;
+	background: #efeff1;
+	height: 580px;
+	/*height: inherit;*/
+}
+.carousel-content .container {
+	position: relative;
+}
+.carousel-content h3 {
+	position: relative;
+	top: 218px;
+	left: 11px;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 112px;
+	font-weight: 700;
+	letter-spacing: 0.2em;
+	text-transform: uppercase;
+	line-height: 0.7;
+	color: #3c3d48;
+}
+.carousel-content p {
+	position: relative;
+	top: 220px;
+	left: 90px;
+	margin-bottom: 0;
+	font-size: 30px;
+	font-style: italic;
+	letter-spacing: 0.4em;
+	line-height: 0.7;
+	color: #afb0b5;
+}
+.carousel-content img {
+	position: absolute;
+	top: 0;
+	right: 3px;
+}
+
+/* carousel-indicator */
+
+.carousel-indicator {
+	position: absolute;
+	z-index: 100;
+	left: 50%;
+	bottom: 30px;
+	transform: translateX(-50%);
+	/*margin-left: -116px;*/
+
+}
+.carousel-indicator ul {
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+	list-style-type: none;
+}
+.carousel-indicator li {
+	float: left;
+	/*margin: 0 21px;*/
+	margin-left: 21px;
+}
+/*
+.carousel-indicator li:first-child {
+	margin-right: 0;
+}
+
+.carousel-indicator li:last-child {
+	margin-right: 0;
+}
+*/
+.carousel-indicator button {
+	box-sizing: border-box;
+	display: block;
+	background: none;
+	border-radius: 50%;
+	width: 7px;
+	height: 7px;
+	padding: 0;
+	border: 2px solid #97979e;
+}
+
+.carousel-indicator .active button {
+	width: 11px;
+	height: 11px;
+	background: #97979e;
+	border: none;
+	margin-top: -2px;
+	margin-left: -2px;
+}
+/**
+ * ------------------------------
+ * Body 영역
+ * ------------------------------
+ */
+
+main {
+	background: #e5e5e5;
+	padding-top: 20px;
+	/*margin-top: -16px;*/
+}
+
+/**
+ * ------------------------------
+ * banner 영역
+ * ------------------------------
+ */
+
+.banner-container {
+	/*margin-top: 20px;*/
+}
+
+.banner-content {
+	height: 300px;
+	background: #ffffff;
+	border-radius: 4px;
+}
+
+.banner-container .double-height {
+	float: right;
+	height: 620px;
+}
+
+.banner-container a {
+	display: block;
+	width: 170px;
+	height: 43px;
+	background: #e36556;
+	color: #fff;
+	border-radius: 2px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	line-height: 43px;
+}
+
+.banner-container .banner-shoes {
+	background: url(../images/banner/shoes.jpg)no-repeat;
+}
+.banner-container .banner-shoes .banner-headline {
+	position: relative;
+	top: 171px;
+}
+
+.banner-container .banner-leather-bags {
+	background: url(../images/banner/leather-bags.jpg) right bottom no-repeat;
+}
+
+.banner-container .banner-leather-bags .banner-headline {
+	text-align: left;
+	position: relative;
+	top: 20px;
+	left: 40px;
+}
+
+.banner-container .banner-women {
+	background: url(../images/banner/woman.jpg) 0 0 no-repeat;
+}
+
+.banner-container .banner-women .banner-headline {
+	position: relative;
+	top: 50%;
+	margin-top: -40px;
+}
+
+.banner-container .banner-women a {
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translateX(-50%);
+	margin-top: -4px;
+}
+
+.banner-container .banner-collection {
+	margin-top: 20px;
+	background: url(../images/banner/collection.jpg) 0 0 no-repeat;
+}
+
+.banner-container .banner-collection .banner-headline {
+	position: relative;
+	top: 20%;
+	right: -30%;
+	margin-right: 46px;
+}
+.banner-container .banner-collection a {
+	position: relative;
+	left: 76%;
+	top: 21%;
+	transform: translateX(-50%);
+	margin-top: -4px;
+}
+
+.banner-container .banner-headline {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 30px;
+	letter-spacing: 0.1em;
+	color: #3c3d48;
+}
+
+.banner-container .sub-headline {
+	display: block;
+	text-transform: lowercase;
+	font-style: italic;
+	font-size: 15px;
+	color: #5b5d69;
+}
+/* 공통 모듈 */
+/*
+[class*="banner-"] {
+	background: #ffffff;
+	border-radius: 4px;
+}
+[class*="banner-"] h3 {
+	text-transform: uppercase;
+	font-size: 30px;
+
+}
+[class*="banner-"] button {
+	display: block;
+	border: none;
+	text-transform: uppercase;
+	font-size: 10px;
+	color: #fff;
+	background: #e36556;
+	border-radius: 2px;
+	width: 170px;
+	height: 43px;
+}
+.left-banner [class*="col-"] {
+	margin: 0;
+}
+
+.banner .banner-1 {
+	height: 300px;
+	text-align: center;
+	margin-right: 10px;
+}
+
+.banner .banner-2 {
+	height: 300px;
+	margin-left: 10px;
+}
+
+.banner .banner-3 {
+	text-align: center;
+	height: 620px;
+}
+
+.banner .banner-4 {
+	height: 300px;
+	margin-top: 20px;
+}
+*/
+/**
+ * ------------------------------
+ * tabs 영역
+ * ------------------------------
+ */
+
+.tabs {
+	background: #ffffff;
+	margin-top: 20px;
+	width: 940px;
+	height: 43px;
+	border-radius: 4px;
+}
+
+
+/**
+ * ------------------------------
+ * products 영역
+ * ------------------------------
+ */
+
+.products {
+	margin-top: 20px;
+}
+
+.products article {
+	height: 407px;
+	background: #ffffff;
+	border-radius: 4px;
+}
+
+
+/**
+ * ------------------------------
+ * About us 영역
+ * ------------------------------
+ */
+
+.about {
+	height: 370px;
+	margin-top: 20px;
+	background: #ffffff;
+	border-radius: 4px;
+	padding: 40px 60px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.about button {
+
+}
+
+
+/**
+ * ------------------------------
+ * FTB 영역
+ * ------------------------------
+ */
+.ftb {
+	padding-bottom: 20px;
+}
+
+.ftb .title {
+	margin: 40px 0;
+	text-align: center;
+}
+
+.ftb .tabs {
+	background: #ffffff;
+	width: 940px;
+	height: 43px;
+	border-radius: 4px;
+}
+
+.blogs article {
+	height: 300px;
+	background: #ffffff;
+	border-radius: 4px;
+	margin-top: 20px;
+}
+
+/**
+ * ------------------------------
+ * footer 영역
+ * ------------------------------
+ */
+
+footer {
+	height: 362px;
+	background: #ffffff;
+}
