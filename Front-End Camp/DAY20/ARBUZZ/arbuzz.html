@@ -14,6 +14,8 @@
 	<link rel="stylesheet" type="text/css" href="css/960gs.css">
 	<link rel="stylesheet" type="text/css" href="css/arbuzz_style.css">
 
+	<script src="js/lib/modernizr.custom.min.js"></script>
+
 	<style>
 
 	</style>
@@ -132,19 +134,21 @@
 		</div>
 		<!-- END banner-container -->
 		<!-- products -->
-		<div class="products-tab container">
+		<div class="products-tab container montserrat">
 			<div class="tab-handle row">
-					<a class="active" href="#featured products" role="button">featured products</a>
-					<a href="#new arrivals" role="button">new arrivals</a>
-					<a href="#best sellers" role="button">best sellers</a>
+				<div class="col-12">
+					<a class="active" href="#featured-products" role="button">featured products</a>
+					<a href="#new-arrivals" role="button">new arrivals</a>
+					<a href="#best-sellers" role="button">best sellers</a>
+				</div>
 			</div>
 			<div class="products row">
 				<div class="featured-products">
 					<!-- product-item -->
-					<div class="product-item" role="group">
+					<div class="product-item col-3" role="group">
 						<div class="nomal-view">
 							<!-- <div class="tag-new">new</div> -->
-							<img src="" alt="">
+							<img src="images/products/flowy-printed-dress.jpg" alt="flowy printed dress">
 							<h4 class="product-name">flowy printed dress</h4>
 							<div class="product-price">$16</div>
 						</div>
@@ -155,12 +159,12 @@
 					</div>
 					<!-- END product-item -->
 					<!-- product-item -->
-					<div class="product-item" role="group">
+					<div class="product-item col-3" role="group">
 						<div class="nomal-view">
 							<div class="tag-new">new</div>
-							<img src="" alt="">
+							<img src="images/products/fitted-dress.jpg" alt="fitted dress">
 							<h4 class="product-name">fitted dress</h4>
-							<div class="product-price">$29,99</div>
+							<div class="product-price">$29.99 <span class="sale-price">$35</span></div>
 						</div>
 						<div class="hover-focus-view">
 							<a href="" role="button" class="button-add-to-shopping-cart" aria-label="Add To Shopping Cart"></a>
@@ -169,10 +173,10 @@
 					</div>
 					<!-- END product-item -->
 					<!-- product-item -->
-					<div class="product-item" role="group">
+					<div class="product-item col-3" role="group">
 						<div class="nomal-view">
 							<div class="tag-hit">hit</div>
-							<img src="" alt="">
+							<img src="images/products/fluted-hem-dress.jpg" alt="fluted hem dress">
 							<h4 class="product-name">fluted hem dress</h4>
 							<div class="product-price">$48,99</div>
 						</div>
@@ -183,10 +187,10 @@
 					</div>
 					<!-- END product-item -->
 					<!-- product-item -->
-					<div class="product-item" role="group">
+					<div class="product-item col-3" role="group">
 						<div class="nomal-view">
-							<div class="tag-sale">sale 30%</div>
-							<img src="" alt="">
+							<div class="tag-sale">sale<br>30%</div>
+							<img src="images/products/textured-pleats-dress.jpg" alt="textured pleats dress">
 							<h4 class="product-name">textured pleats dress</h4>
 							<div class="product-price">$35,99</div>
 						</div>
@@ -197,10 +201,79 @@
 					</div>
 					<!-- END product-item -->
 				</div>
-				<div id="new-arrivals"></div>
-				<div id="best-sellers"></div>
+				<!-- <div id="new-arrivals"></div> -->
+				<!-- <div id="best-sellers"></div> -->
 			</div>
 		</div>
+
+		<!-- about-us -->
+		<div class="about-us container">
+			<div class="row">
+				<div class="view col-12">
+					<h3 class="headline">about us</h3>
+					<p class="PT-serif desc">
+						Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+					</p>
+					<a class="ghost-button" href="">read more</a>
+				</div>
+			</div>
+		</div>
+		<!-- END about-us -->
+		<!-- from-the-blog -->
+		<div class="from-the-blog container">
+			<div class="row">
+				<h3 class="headline col-12">from the blog</h3>
+			</div>
+			<div class="tab-handle row">
+				<div class="col-12">
+					<a class="active" href="#last-articles" role="button">last articles</a>
+					<a href="#most-viewed" role="button">most viewed</a>
+					<a href="featured" role="button">featured</a>
+				</div>
+			</div>
+			<div class="blog-contents row">
+				<div class="last-articles">
+					<!-- blog-article -->
+					<div class="blog-article article-category-thchno col-4" role=group>
+						<h4 class="blog-article-category">techno</h4>
+						<h3 class="blog-article-headline">
+							Sci-Fi Films Make Us Think Real-Life Robots Will Be Rriendly Says Study
+						</h3>
+						<p class="blog-article-summary PT-serif">
+							Robotics designers should model robots based on those in films if they want the public to interact with them.
+						</p>
+						<time class="write-time" datetime="">5 minutes ago</time>
+					</div>
+					<!-- END blog-article -->
+					<!-- blog-article -->
+					<div class="blog-article article-category-life article-photo col-4" role=group>
+						<img src="images/blog/life.jpg" alt="">
+						<h4 class="blog-article-category">life</h4>
+						<h3 class="blog-article-headline">
+							Kanye West Claims He Sold $1 Million Worth Of Merchandise In Two Dayse
+						</h3>
+						<p class="blog-article-summary PT-serif">
+							We sort of want to see the receipts though.
+						</p>
+						<span class="comments">43</span>
+					</div>
+					<!-- END blog-article -->
+					<!-- blog-article -->
+					<div class="blog-article article-category-travel article-photo col-4" role=group>
+						<img src="images/blog/travel.jpg" alt="">
+						<h4 class="blog-article-category">travel</h4>
+						<h3 class="blog-article-headline">
+							The Five Most<br>Lust-Worthy Watches<br>From Baselworld
+						</h3>
+						<span class="author"><img src="images/blog/jared-paul-stern.png" alt="">JARED PAUL STERN</span>
+					</div>
+					<!-- END blog-article -->
+				</div>
+        		<!-- <div id="most-viewed"></div> -->
+        		<!-- <div id="featured"></div> -->
+			</div>
+		</div>
+		<!-- 끝: .from-the-blog -->
 	</main>
 
 	<!-- JavaScript-->

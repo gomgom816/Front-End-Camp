@@ -377,7 +377,7 @@ html {
 
 .banner-container .banner-women .banner-headline {
 	margin-top: 245px;
-	margin-left: 42px;
+	margin-bottom: 42px;
 }
 
 /* banner-collection */
@@ -395,142 +395,272 @@ html {
 	margin-bottom: 44px;
 }
 
-
-/* 공통 모듈 */
-/*
-[class*="banner-"] {
-	background: #ffffff;
-	border-radius: 4px;
-}
-[class*="banner-"] h3 {
-	text-transform: uppercase;
-	font-size: 30px;
-
-}
-[class*="banner-"] button {
-	display: block;
-	border: none;
-	text-transform: uppercase;
-	font-size: 10px;
-	color: #fff;
-	background: #e36556;
-	border-radius: 2px;
-	width: 170px;
-	height: 43px;
-}
-.left-banner [class*="col-"] {
-	margin: 0;
-}
-
-.banner .banner-1 {
-	height: 300px;
-	text-align: center;
-	margin-right: 10px;
-}
-
-.banner .banner-2 {
-	height: 300px;
-	margin-left: 10px;
-}
-
-.banner .banner-3 {
-	text-align: center;
-	height: 620px;
-}
-
-.banner .banner-4 {
-	height: 300px;
-	margin-top: 20px;
-}
-*/
-/**
- * ------------------------------
- * tabs 영역
- * ------------------------------
- */
-
-.tabs {
-	background: #ffffff;
-	margin-top: 20px;
-	width: 940px;
-	height: 43px;
-	border-radius: 4px;
-}
-
-
 /**
  * ------------------------------
  * products 영역
  * ------------------------------
  */
 
-.products {
+.products-tab {
 	margin-top: 20px;
 }
 
-.products article {
-	height: 407px;
+/* tab-handle */
+
+.tab-handle > div {
+	display: flex;
+	justify-content: center;
 	background: #ffffff;
 	border-radius: 4px;
 }
 
+.tab-handle a {
+	display: inline-block;
+	margin-right: 27px;
+	padding: 0.65em;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 0.05em;
+	color: #3c3d48;
+}
 
-/**
- * ------------------------------
- * About us 영역
- * ------------------------------
- */
+.tab-handle a.active {
+	position: relative;
+}
 
-.about {
-	height: 370px;
+.tab-handle a.active::before {
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: 50%;
+	margin-left: -5px;
+	border-top: 5px solid #e36556;
+	border-right: 5px solid transparent;
+	border-left: 5px solid transparent;
+}
+
+/* products */
+
+.products-tab .products {
 	margin-top: 20px;
+	text-align: center;
+}
+
+.products-tab .product-item {
+	overflow: hidden;
+	position: relative;
 	background: #ffffff;
 	border-radius: 4px;
-	padding: 40px 60px;
-	box-sizing: border-box;
-	text-align: center;
 }
-
-.about button {
-
-}
-
-
-/**
- * ------------------------------
- * FTB 영역
- * ------------------------------
- */
-.ftb {
-	padding-bottom: 20px;
-}
-
-.ftb .title {
-	margin: 40px 0;
-	text-align: center;
-}
-
-.ftb .tabs {
-	background: #ffffff;
-	width: 940px;
+/* tag */
+[class*="tag-"] {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	right: 0;
 	height: 43px;
-	border-radius: 4px;
+	width: 43px;
+	color: #fff;
+	font-size: 10px;
+	/*font-family: 'Montserrat', sans-serif;*/
+	font-weight: 400; /* Regular */
+	text-transform: uppercase;
 }
 
-.blogs article {
-	height: 300px;
-	background: #ffffff;
-	border-radius: 4px;
+.tag-new { background: #62b951; }
+.tag-hit { background: #e3db56; }
+.tag-sale { background: #e36556; }
+
+/* img */
+
+.products-tab .product-item img {
+	vertical-align: top;
+}
+
+/* product-name */
+
+.products-tab .product-name {
 	margin-top: 20px;
+	margin-bottom: 10px;
+	font-size: 12px;
+	font-weight: 400;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: #3c3d48;
+	line-height: 1.7;
+}
+
+/* product-price */
+
+.products-tab .product-price {
+	margin-bottom: 20px;
+	font-size: 14px;
+	font-weight: 700;
+	color: #e36556;
+	line-height: 1.5;
+}
+
+.products-tab .sale-price {
+	color: #d7d7d7;
+	font-size: 10px;
+	font-weight: 400;
+	text-decoration: line-through;
+}
+.products-tab .product-item .hover-focus-view {
+	opacity: 0;
+	position: absolute;
+	bottom: 122px;
+	left: 50%;
+	margin-left: -44px;
+}
+
+.products-tab .product-item:hover img {
+	opacity: 0.1;
+}
+
+.products-tab .product-item:hover .hover-focus-view {
+	opacity: 1;
+}
+
+/* button */
+
+.products-tab .hover-focus-view a {
+	display: inline;
+	padding: 0.75em 1.375em;
+}
+
+.products-tab .button-add-to-shopping-cart {
+	border-radius: 3px 0 0 3px;
+	background: #cc5b4d url("../images/icons/Icon-cart.svg") no-repeat center;
+}
+
+.products-tab .button-add-to-shopping-cart:hover,
+.products-tab .button-add-to-shopping-cart:focus {
+	background-color: #86322c;
+}
+
+.products-tab .button-add-to-shopping-wishlist {
+	border-radius: 0 3px 3px 0;
+	background: #e67567 url("../images/icons/Icon-wishlist.svg") no-repeat center;
+}
+
+.products-tab .button-add-to-shopping-wishlist:hover,
+.products-tab .button-add-to-shopping-wishlist:focus {
+	background-color: #a13937;
 }
 
 /**
  * ------------------------------
- * footer 영역
+ * about-us 영역
  * ------------------------------
  */
 
-footer {
-	height: 362px;
+.about-us {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.about-us .view {
+	border-radius: 4px;
+	padding-bottom: 40px;
+	background: #fff;
+}
+
+.about-us .desc {
+	margin: 0 4em 40px;
+	font-size: 15px;
+	letter-spacing: -0.005em;
+	line-height: 1.733333333;
+	text-align: left;
+	color: #5b5d69;
+}
+
+.about-us .ghost-button {
+	display: inline-block;
+	box-sizing: border-box;
+	border-radius: 2px;
+	border: 2px solid currentColor;
+	padding: 1.2em 4.4em;
+	font-size: 10px;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	text-decoration: none;
+	color: #e36556;
+}
+
+.about-us .ghost-button:hover,
+.about-us .ghost-button:focus {
+	color: #882928;
+}
+
+.headline {
+	margin-top: 40px;
+	margin-bottom: 28px;
+	font-size: 40px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #3c3d48;
+	line-height: 0.7;
+}
+
+/**
+ * ------------------------------
+ * from-the-blog 영역
+ * ------------------------------
+ */
+
+.from-the-blog {
+	margin-top: 3px;
+	text-align: center;
+}
+
+.from-the-blog .headline {
+	margin-bottom: 40px;
+}
+
+.from-the-blog .blog-contents {
+	margin-top: 20px;
+	text-align: left;
+}
+
+.from-the-blog .blog-article {
+	box-sizing: border-box;
+	position: relative;
+	z-index: 0;
+	overflow: hidden;
+	height: 300px;
+	border-radius: 4px;
+	padding: 30px 30px 15px 30px;
 	background: #ffffff;
+	color: #3c3d48;
+}
+
+.from-the-blog .article-photo {
+	color: #fff;
+	font-weight: 400;
+}
+
+.from-the-blog .blog-article * {
+	margin: 0;
+}
+
+.from-the-blog .blog-article > img {
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+}
+
+/* blog-article-category */
+.from-the-blog .blog-article-category {
+	margin-bottom: 20px;
+	font-weight: 400;
+	font-size: 11px;
+	text-transform: uppercase;
+	line-height: 1;
+	letter-spacing: 0.2em;
+	color: #b8b9bd;
 }
